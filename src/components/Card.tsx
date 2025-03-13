@@ -16,8 +16,8 @@ export default function Card({venueName, imgSrc, onRating}:{venueName:string, im
                 className='object-cover rounded-t-lg'
                 />
             </div>
-            <div className='w-full h-[30%] p-2 text-center text-lg font-semibold text-black'>
-                {venueName}
+            <div className='w-full h-[30%] p-2 text-center text-lg font-semibold text-black flex flex-col justify-center items-center'>
+                <div>{venueName}</div>
                 <Rating
                     name={venueName+" Rating"}         
                     id={venueName+" Rating"} 
